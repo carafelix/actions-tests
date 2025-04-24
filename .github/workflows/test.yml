@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: carafelix/pandiff-action@c198dc8a9b25d7a53408266bf5dbdc76864fe84c
+        uses: carafelix/simple-pandiff-action@432e22284b359ada68d19dec7d92a1aff99fc181
         with:
-          repo-token: ${{github.GH_TOKEN}}
+          repo-token: ${{secrets.GH_TOKEN}}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "${{ steps.hello.outputs.diffs }}"
