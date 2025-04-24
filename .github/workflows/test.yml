@@ -10,7 +10,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: carafelix/simple-pandiff-action@74694290faeeff2a9628e6cf22e15e1b9f6e95e4
+        uses: carafelix/simple-pandiff-action@c91aa002b3353c1a60d4216933aa49a7e148d0b9
         with:
           repo-token: ${{secrets.GH_API_TOKEN}}
       # Use the output from the `hello` step
