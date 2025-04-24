@@ -5,14 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: pandiff pr
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Hello world action step
+      - name: Hello world
         id: hello
-        uses: carafelix/pandiff-action@fdddf27f77df06be68d998d2918140288a24edf5
-        with:
-          repo-token: ${{secrets.GH_API_TOKEN}}
+        uses: carafelix/simple-pandiff-action@a40c3f3058ac66eabd7204dbc7ecc61d5f2f3afd
+
       # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "${{ steps.hello.outputs.diffs }}"
+      # - name: Get the output time
+      #   run: echo "${{ steps.hello.outputs.diffs }}"
