@@ -9,7 +9,7 @@ jobs:
         id: hello
         uses: carafelix/simple-pandiff-action@f32ba8bb3082ff8fa284e1c4f9b41d6dbd116218
         with:
-          repo-token: ${{secrets.GH_TOKEN}}
+          repo-token: ${{secrets.GH_API_TOKEN}}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "${{ steps.hello.outputs.diffs }}"
