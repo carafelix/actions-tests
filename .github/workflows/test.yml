@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world
         id: hello
-        uses: carafelix/simple-pandiff-action@4ca5e55ad7d560ecdb9ea3eefb37fc4cbc997878
+        uses: carafelix/simple-pandiff-action@efee6a891ed286bbdd46fb99e138422205b44c86
 
       # Use the output from the `hello` step
       - name: Get the output time
