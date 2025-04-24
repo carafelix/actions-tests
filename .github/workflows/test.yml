@@ -11,4 +11,4 @@ jobs:
 
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "${{ steps.hello.outputs.diffs }}" | jq .
+        run: echo '${{ steps.hello.outputs.diffs }}' | jq .
