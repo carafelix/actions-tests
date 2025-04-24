@@ -10,5 +10,5 @@ jobs:
         uses: carafelix/simple-pandiff-action@56b000a0043bb26d4af4e49cab339d898249240f
 
       # Use the output from the `hello` step
-      # - name: Get the output time
-      #   run: echo "${{ steps.hello.outputs.diffs }}"
+      - name: Get the output time
+        run: echo "${{ steps.hello.outputs.diffs }}"
