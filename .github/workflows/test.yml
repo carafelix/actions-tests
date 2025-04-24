@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: pandiff pr
     steps:
+      - name: instalar weas ctm
+        run: npm i
       - name: Hello world action step
         id: hello
         uses: carafelix/simple-pandiff-action@f32ba8bb3082ff8fa284e1c4f9b41d6dbd116218
