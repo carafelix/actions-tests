@@ -8,12 +8,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm install
-        
       - name: Hello world action step
         id: hello
-        uses: carafelix/simple-pandiff-action@f32ba8bb3082ff8fa284e1c4f9b41d6dbd116218
+        uses: carafelix/simple-pandiff-action@74694290faeeff2a9628e6cf22e15e1b9f6e95e4
         with:
           repo-token: ${{secrets.GH_API_TOKEN}}
       # Use the output from the `hello` step
